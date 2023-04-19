@@ -54,7 +54,8 @@ public class ConcurrentSettingsDaoTest extends AbstractNonTransactionalTest {
 
 		// executorService.shutdown();
 		// some more comments
-		boolean terminated = executorService.awaitTermination(10000, TimeUnit.SECONDS);
+		// und noch was
+  	boolean terminated = executorService.awaitTermination(10000, TimeUnit.SECONDS);
 		assertTrue(terminated, "Concurrent insertion of webuser setting doesn't terminate.");
 
 		// check that the setting is set after the concurrent insertions
